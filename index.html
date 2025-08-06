@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paoversary</title>
+    <link rel="icon" href="/img/pao_split.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <div class="big_container">
+         <!-- LETTERS -->
+        <div class="center hidden" id="letter_container">
+            <div class="letter_container middle">
+                <div class="title">PAOVERSARY</div>
+                <img src="/img/pao_flowers.png" width="200px" alt="Paos holding flower">
+                <div class="description">
+                    <p class="time">08/10/2025</p>
+                    <p class="footer">
+                        Join the Paos as we celebrate a milestone of love, laughter,
+                        and lasting memories on this special occasion.
+                    </p>
+                    <button id="letter_continue_btn">Click to continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="center" id="password_container">
+            <div class="tape hidden" id="do-not-cross">
+                <div class="stripe" id="stripe_num1" ><p class="stripe_text">DO NOT CROSS</p></div>
+                <div class="stripe" id="stripe_num2" ><p class="stripe_text">DO NOT CROSS</p></div>
+                <div class="stripe" id="stripe_num3" ><p class="stripe_text">DO NOT CROSS</p></div>
+                <div class="stripe" id="stripe_num4" ><p class="stripe_text">I LOVE EURI</p></div>
+            </div>
+            <div class="warning hidden" id="warning">
+                <div class="title">OOPS</div>
+                <div class="description">
+                    <p>It seems that this experiences require a password
+                        to enter. Perchance you can figure this out?
+                    </p>
+                    <p>AND DEFINELTY DONT ASK PAOM...</p>
+                    <p class="signed">-Paok-</p>
+
+                    <form action="" class="form" id="form_password">
+                        <input id="input_password" type="text">
+                        <button type="submit">ENTER</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="paom_hint hidden" id="paom_hint">
+                <span class="hidden" id="hint">It's Ann's favorite food</span>
+                <button id="hint_btn"><img src="/img/paom.png" width="50px" alt=""></button>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+<!-- JS LINK  -->
+<script src="main.js"></script>
+<script src="event.js"></script>
+
+
+</body>
+</html>

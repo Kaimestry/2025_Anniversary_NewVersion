@@ -1,0 +1,60 @@
+/* Rotation differences for realism */
+#stripe_num1 { transform: rotate(-5deg); animation: rollInLeft 1s ease forwards; }
+#stripe_num2 { transform: rotate(2deg); animation: rollInRight 1s ease forwards; }
+#stripe_num3 { transform: rotate(-3deg); animation: rollInLeft 1s ease forwards; }
+#stripe_num4 { transform: rotate(4deg); animation: rollInRight 1s ease forwards; }
+
+/* Roll in from left */
+@keyframes rollInLeft {
+  0% { transform: translateX(-150%) rotate(var(--angle)); opacity: 0; }
+  100% { transform: translateX(0) rotate(var(--angle)); opacity: 1; }
+}
+
+/* Roll in from right */
+@keyframes rollInRight {
+  0% { transform: translateX(150%) rotate(var(--angle)); opacity: 0; }
+  100% { transform: translateX(0) rotate(var(--angle)); opacity: 1; }
+}
+
+#stripe_num1 { --angle: -5deg; animation: rollInLeft 1s ease forwards; }
+#stripe_num2 { --angle: 2deg;  animation: rollInRight 1s ease forwards; }
+#stripe_num3 { --angle: -3deg; animation: rollInLeft 1s ease forwards; }
+#stripe_num4 { --angle: 4deg;  animation: rollInRight 1s ease forwards; }
+
+@keyframes rollInLeft {
+  0% { transform: translateX(-150%) rotate(var(--angle)); opacity: 0; }
+  100% { transform: translateX(0) rotate(var(--angle)); opacity: 1; }
+}
+
+@keyframes rollInRight {
+  0% { transform: translateX(150%) rotate(var(--angle)); opacity: 0; }
+  100% { transform: translateX(0) rotate(var(--angle)); opacity: 1; }
+}
+
+#stripe_num1 { animation-delay: 0s; }
+#stripe_num2 { animation-delay: 0.1s; }
+#stripe_num3 { animation-delay: 0.2s; }
+#stripe_num4 { animation-delay: 0.3s; }
+
+/* FADE IN AND OUT ANIMATION */
+.hidden{
+    display: none;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity ease 0.3s;
+}
+
+.fade-in.show{
+    opacity: 1;
+}
+
+.fade-out{
+    opacity: 1;
+    transition: opacity ease 0.3s;
+}
+
+.fade-out.hide{
+    opacity: 0;
+}
