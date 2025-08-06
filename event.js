@@ -41,5 +41,5 @@ function TestAtPassword(){
     fadeInEffect(paom_hint);
 }
 
-//fadeInEffect(letter_container);
-TestAtPassword()
+fadeInEffect(letter_container);
+//TestAtPassword()
